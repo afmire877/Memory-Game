@@ -1,11 +1,15 @@
-var cards = document.querySelectorAll("td.card");
+var cards = document.querySelectorAll("td.card"),
+	image = document.getElementById('1');
 
 
-for (var i =0;i <= cards.length;i++) {
-	cards[i].innerHTML = '<img src="'+ images[i].src +'" />'; 
-};
 
 
+
+// for (var i =0;i <= cards.length;i++) {
+// 	cards[i].innerHTML = '<img src="'+ images[i].src +'" />'; 
+// };
+
+image.src = "png/black-and-white-whistle-variant.png";
 
 
 var images = [
@@ -25,6 +29,8 @@ function randomimg(){
 
 };
 function randomNumber(){
-	var random = Math.random() * 10;
+	var random = Math.floor(Math.random() * 10);
 	return random
 };
+
+console.log(randomNumber())
