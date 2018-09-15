@@ -1,0 +1,23 @@
+* {
+	margin:0;
+	box-sizing: border-box;
+
+}
+ td img {
+ 	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+}
+table {
+	margin: 0 auto ;
+}
+td {
+	width:150px;
+	height: 150px;
+}
+
+table , td {
+	border: 2px solid red;
+
+}
