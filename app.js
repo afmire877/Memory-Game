@@ -1,29 +1,37 @@
-var cards = document.querySelectorAll("td.card"),
-	image = document.getElementById('1');
+var images = document.querySelectorAll("img.image");
 
 
-
-
-
-// for (var i =0;i <= cards.length;i++) {
-// 	cards[i].innerHTML = '<img src="'+ images[i].src +'" />'; 
-// };
-
-image.src = "png/black-and-white-whistle-variant.png";
-
-
-var images = [
-	{src:"png/black-and-white-whistle-variant.png"},
-	{src:"png/checkered-flags.png"},
-	{src:"png/bees-panel-texture.png"},
-	{src:"png/couple-of-football-cones.png"},
-	{src:"png/flaming-football.png"},
-	{src:"png/football-award-with-white-details.png"},
-	{src:"png/football-badge.png"},
-	{src:"png/football-ball.png"},
-	{src:"png/football-card-with-cross-mark.png"}
+var image = [
+	"png/black-and-white-whistle-variant.png",
+	"png/checkered-flags.png",
+	"png/bees-panel-texture.png",
+	"png/couple-of-football-cones.png",
+	"png/flaming-football.png",
+	"png/football-award-with-white-details.png",
+	"png/football-badge.png",
+	"png/football-ball.png", 
+	"png/football-championship-award-with-plus-sign.png",
+	"png/football-coach-screaming.png",
+	"png/football-court-illumination-lamps.png",
+	"png/football-fan-raising-flag.png",
+	"png/football-fans-group.png",
 
 ];
+
+
+function setupCards(){
+	for (var i=0;i <= image.length;i++){
+		var random = randomNumber();
+		images[i].src = image[random];
+	
+	};
+};
+
+ // for(var i=0;i<= images.length;i++){
+ // 	images[i].addEventListener("click", function(){
+ // 		console.log(this.src);
+ // 	});
+ // }
 
 function randomimg(){
 
@@ -33,4 +41,5 @@ function randomNumber(){
 	return random
 };
 
-console.log(randomNumber())
+console.log(image)
+setupCards();
