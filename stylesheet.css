@@ -13,11 +13,25 @@ table {
 	margin: 0 auto ;
 }
 td {
+	margin:auto;
 	width:150px;
 	height: 150px;
 }
 
-table , td {
+
+td {
+	border-radius: 10px;
 	border: 2px solid red;
 
+}
+p {
+	font-size: 20px;
+	margin:0 auto;
+	display: block;
+
+}
+
+.clicked {
+ 	background-color: lightblue;
+ 	/*font-size: 20px;*/
 }
